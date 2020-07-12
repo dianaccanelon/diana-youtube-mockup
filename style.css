@@ -7,8 +7,7 @@
     background-color: #242424;
 }
 
-
-/* Navigation Bar */
+/*NAVIGATION BAR*/
 
 .nav {
     overflow: hidden;
@@ -56,17 +55,17 @@
     text-decoration: none;
     color:#606060;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 200;
+    font-weight: bold;
     font-size: 80%;
-    padding-top:8px;
-    padding-bottom: 8px;
+    padding-top:5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     margin-right:50px;
     margin-top: 10px;
     border:2px solid #606060;
     border-width: fit-content;
-    border-radius: 28%;
+    border-radius: 15px 15px 15px 15px;
     
     
 }
@@ -87,64 +86,272 @@
 }
 
 
-/* Body */
+/*left bar*/
+
+/*VIDEO INFO*/
+
+.channel-info{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 4%;
+}
+
+.channel-info-left-items a{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
+}
+
+.channel-info-right{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.channel-info-left{
+    display: flex;
+    width: 60%;
+    
+}
 
 #vid-title{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 300;
     color: #fafafa;
-    float:left;
+    
 }
 
-.channel-container{
-    float:left;
-    display: flex;
-}
 
 #channel-logo img{
     border-radius: 50%;
+    margin-top: -20%;
 }
 
 #channel-name{
-    display:inline-block;
-    text-decoration:none;
-    color:#606060;
-    font-family:"Roboto", Arial, Helvetica, sans-serif;
-    padding-left: 4px;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #535354;
+    font-size: 90%;
 }
 
 #subscribe{
-    float:left;
     text-decoration: none;
-    color:#606060;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 80%;
-    padding-top:8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right:50px;
-    margin-top: 10px;
-    border:2px solid #606060;
+    font-size: 70%;
+    font-weight: bold;
+    color: #535354;
+    border:2px solid #535354;
     border-width: fit-content;
-    border-radius: 28%;
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: -5%;
+}
+
+#subscribers{
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    color: #535354;
+
+}
+
+#video-count{
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    color: #535354;
+    border-spacing: 2px;
+}
+
+
+.options{
+    justify-content: space-evenly;
+    border-bottom: 1px solid #59595A;
+    height: 3%;
+    width: 95%;
+
+
+}
+
+.option-buttons{
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    color: #535354;
+    padding-right: 3%;
+    
+}
+
+.video-description p{
+    font-family: sans-serif;
+    font-size: 71%;
+    color: #fafafa;
+    width: 95%;
+    line-height: 130%;
+}
+
+#show-more-button{
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #535354;
+    font-size: 90%;
+}
+
+#published-date{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #535354;
+    font-size: 75%;
+}
+
+/*COMMENTS*/
+
+#Comments-head{
+    display: flex;
+    justify-content: space-between;
+    height: 4%;
+    
+}
+
+.comments-info{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
     
     
+}
+
+#Comments-title{
+    display:flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+#comments-num{
+    display: flex;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #535354;
+    padding-top: 5px;
+
+}
+
+
+/*USER COMMENT BAR*/
+
+.user-comment-section{
+    display: flex;
+    width: 95%;
+    height: 5%;
+    
+}
+
+.comment-bar [type=text]{
+    background-color: #282828;
+    font-size: 15px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #606060;
+    border-radius: 4px;
+    border: 1px transparent;
+    width: 250%;
+}
+
+.comment-photo img{
+    border-radius: 50%;
+}
+
+/*COMMENTS*/
+
+.comment{
+    display: flex;
+    
+}
+
+.comment-photo{
+    display: flex;
+    width:8%;
+}
+
+.user-and-comment{
+    line-height: 120%;
+    
+}
+
+.user-comment{
+    font-family: sans-serif;
+    font-size: 80%;
+    color: #fafafa;
+    line-height: 130%;
+    width: 90%;
+}
+
+.username{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 80%;
+    color: #676767;
+    line-height: 130%;
+}
+
+
+
+
+/*SEPARATING LEFT & RIGHT*/
+.left-column{
+    width: 65%;
+}
+
+.main-column{
+    display: flex;
+}
+
+/*RIGHT SIDE*/
+
+.aside{
+    width: 35%;
+    
+}
+
+.likebar{
+    background-color: #25496F;
+    height: 3px;
+    width: 85%;
+    
+}
+
+.like-buttons{
+    display: flex;
+    
+}
+
+.like{
+    width: 42.25%;
+    background-color: #161617;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #676767;
+}
+
+.dislike{
+    width: 42.25%;
+    background-color: #161617;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #676767;
 }
 
 
 
 
 
-
-  
-
-
-
-
-
- 
-  
-  
